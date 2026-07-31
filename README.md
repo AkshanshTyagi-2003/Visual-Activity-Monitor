@@ -55,8 +55,13 @@ It's designed for use cases like:
 
 ## Getting Started
 
-Setup and installation steps — including running the app locally, installing the Chrome extension, and connecting it to the dashboard — are covered in [`INSTALLATION.md`](./INSTALLATION.md).
+Setup and installation steps — including running the app locally, installing the Chrome extension, and connecting it to the dashboard — are covered in [`Installation Guide`](./Installation_Guide.md).
 
-## License
+## Screenshots
 
-Add your license here (e.g., MIT).
+<img width="1470" height="834" alt="image" src="https://github.com/user-attachments/assets/cb0497bb-39e1-4d12-9be2-148f540fd590" />
+<br><br>
+<img width="1470" height="769" alt="image" src="https://github.com/user-attachments/assets/8438be0d-7ef3-4319-a4aa-3fc6c4a466b2" />
+
+
+
