@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Activity Monitor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-title">
+        <div class="status-dot" id="statusDot"></div>
+        <h2>Activity Monitor</h2>
+      </div>
+      <span class="badge" id="statusBadge">Checking...</span>
+    </header>
+
+    <div id="loginSection" class="section">
+      <p class="section-desc">Sign in with your backend API token to begin tracking.</p>
+      
+      <div class="form-group">
+        <label for="apiUrl">API Base URL</label>
+        <input type="text" id="apiUrl" value="http://localhost:3000/api" placeholder="http://localhost:3000/api">
+      </div>
+
+      <div class="form-group">
+        <label for="tokenInput">JWT Auth Token</label>
+        <input type="password" id="tokenInput" placeholder="Paste your JWT token here">
+      </div>
+
+      <button id="saveBtn" class="btn primary">Save & Connect</button>
+    </div>
+
+    <div id="activeSection" class="section hidden">
+      <div class="info-card">
+        <div class="info-label">Current Active Tab</div>
+        <div class="info-value" id="currentTabUrl">Detecting...</div>
+      </div>
+
+      <div class="toggle-row">
+        <span>Activity & Screenshot Tracking</span>
+        <label class="switch">
+          <input type="checkbox" id="trackingToggle" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="btn-group">
+        <button id="captureNowBtn" class="btn secondary">Capture Screenshot Now</button>
+        <button id="openDashboardBtn" class="btn outline">Open Dashboard</button>
+      </div>
+
+      <button id="logoutBtn" class="btn danger-link">Disconnect Account</button>
+    </div>
+
+    <footer class="footer">
+      Automated 15s visual capture active
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

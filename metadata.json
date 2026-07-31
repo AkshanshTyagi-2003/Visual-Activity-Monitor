@@ -1,0 +1,6 @@
+{
+  "name": "Visual Activity Monitor",
+  "description": "Chrome Extension & Dashboard for automated visual activity tracking, screenshot logging, and time analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,19 @@
+import { Request, Response, NextFunction } from 'express';
+
+export function errorHandler(
+  err: any,
+  _req: Request,
+  res: Response,
+  _next: NextFunction
+): void {
+  const statusCode = err.statusCode || 500;
+  if (statusCode >= 500) {
+    console.error('API Error:', err);
+  }
+  const message = err.message || 'Internal Server Error';
+
+  res.status(statusCode).json({
+    error: message,
+    ...(process.env.NODE_ENV === 'development' && { stack: err.stack }),
+  });
+}
